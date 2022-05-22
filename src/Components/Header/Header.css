@@ -1,7 +1,12 @@
 .Header {
     display: flex;
     background-color: #018185;
-    padding: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .Header-LeftCol {
@@ -11,7 +16,23 @@
 
 
 .Header-RightCol {
-    flex: 1;
+    flex: 2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Home-Button {
+    background-color: #018185;
+    
+    border: 0;
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: #fffffff4;
+}
+
+.Home-Button:hover {
+    color: #40AF93;
 }

@@ -1,41 +1,70 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 
 import RedirectButton from './RedirectButton';
 
 import './Header.css'
 
 const Header = function () {
-    const RedirectUpdateFunctions = [
-        useRef(null),
-        useRef(null),
-        useRef(null),
-        useRef(null),
-    ]
+    const [prologueActive, setPrologueActive] = useState(true);
+    const [projectsActive, setProjectsActive] = useState(false);
+    const [resumeActive, setResumeActive] = useState(false);
+    const [contactsActive, setContactsActive] = useState(false);
 
-    const RedirectionRoutes = {
-        Home: "Home",
-        Prologue: "PROLOGUE",
-        Projects: "PROJECTS",
-        Resume: "RESUME",
-        Contacts: "CONTACTS"
-    };
+    const redirectionDatas = {
+        prologue: {
+            name: "PROLOGUE",
+            isActive: prologueActive,
+            setIsActive: setPrologueActive
+        },
+        projects: {
+            name: "PROJECTS",
+            isActive: projectsActive,
+            setIsActive: setProjectsActive
+        },
+        resume: {
+            name: "RESUME",
+            isActive: resumeActive,
+            setIsActive: setResumeActive
+        },
+        contacts: {
+            name: "CONTACTS",
+            isActive: contactsActive,
+            setIsActive: setContactsActive
+        },
+    }
 
-    const UpdateActiveRedirect = function (activeRedirect) {
-        for (let i = 0; i !== RedirectUpdateFunctions.length; i++) {
-            RedirectUpdateFunctions[i].current(activeRedirect);
-        }
-    };
+    const handleRedirection = function (redirectTo) {
+        Object.entries(redirectionDatas).map(([key, value], index) => {
+            if (value.name === redirectTo) {
+                value.setIsActive(true);
+            }
+            else if (value.isActive) {
+                value.setIsActive(false);
+            }
+            return null;
+        });
+    }
+
+    const redirectButtons = function () {
+        const res = [];
+
+        Object.entries(redirectionDatas).map(([key, value], index) => {
+            res.push(
+                <RedirectButton key={value.name} name={value.name} isActive={value.isActive} handleRedirection={handleRedirection} />
+            );
+            return null;
+        });
+
+        return res;
+    }
 
     return (
         <header className="Header">
             <div className='Header-LeftCol'>
-                <button>Thomas Raveneau</button>
+                <button className='Home-Button' >Thomas Raveneau</button>
             </div>
-            <div className='Header-RightCol' id='Header-RightCol'>
-                <RedirectButton redirectTo={RedirectionRoutes.Prologue} OnUpdateActive={UpdateActiveRedirect} RedirectUpdateFunction={RedirectUpdateFunctions[0]} />
-                <RedirectButton redirectTo={RedirectionRoutes.Projects} OnUpdateActive={UpdateActiveRedirect} RedirectUpdateFunction={RedirectUpdateFunctions[1]} />
-                <RedirectButton redirectTo={RedirectionRoutes.Resume} OnUpdateActive={UpdateActiveRedirect} RedirectUpdateFunction={RedirectUpdateFunctions[2]} />
-                <RedirectButton redirectTo={RedirectionRoutes.Contacts} OnUpdateActive={UpdateActiveRedirect} RedirectUpdateFunction={RedirectUpdateFunctions[3]} />
+            <div className='Header-RightCol'>
+                {redirectButtons()}
             </div>
         </header>
     );

@@ -6,9 +6,11 @@
     border-radius: 3px;
 
     color: #fffffff4;
-    font-size: 14px;
-    font-weight: 800;
-    font-family: 'Merriweather Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875em;
+    font-family: 'Archivo Black', 'Merriweather Sans', sans-serif;
+
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .Redirect-Button:hover {
