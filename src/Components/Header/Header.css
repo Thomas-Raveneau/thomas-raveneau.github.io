@@ -1,0 +1,17 @@
+.Header {
+    display: flex;
+    background-color: #018185;
+    padding: 20px;
+}
+
+.Header-LeftCol {
+    flex: 1;
+    display: flex;
+}
+
+
+.Header-RightCol {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}

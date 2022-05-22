@@ -1,0 +1,25 @@
+.Redirect-Button {
+    padding: 15px;
+
+    background-color: #018185;
+    border-width: 0;
+    border-radius: 3px;
+
+    color: #fffffff4;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Merriweather Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Redirect-Button:hover {
+    color: #40AF93;
+}
+
+.Active {
+    background-color: #40AF93;
+}
+
+.Redirect-Button.Active:hover {
+    color: #fffffff4;
+    background-color: #3bbfc3;
+}
