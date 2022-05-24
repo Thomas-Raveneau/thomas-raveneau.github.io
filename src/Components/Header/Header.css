@@ -1,5 +1,6 @@
 .Header {
     display: flex;
+    flex: 1;
     background-color: #018185;
 
     padding-top: 10px;
@@ -7,6 +8,17 @@
 
     padding-left: 10%;
     padding-right: 10%;
+
+    position: fixed;
+    top: -500px;
+    right: 0;
+    left: 0;
+    
+    transition: .5s;
+}
+
+.Header.Is-Visible {
+    top: 0;
 }
 
 .Header-LeftCol {

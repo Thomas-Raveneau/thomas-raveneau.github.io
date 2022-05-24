@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import RedirectButton from './RedirectButton';
 
 import './Header.css'
 
-const Header = function () {
+const Header = ({ headerVisibilityFunction }) => {
     const [prologueActive, setPrologueActive] = useState(true);
     const [projectsActive, setProjectsActive] = useState(false);
     const [resumeActive, setResumeActive] = useState(false);
     const [contactsActive, setContactsActive] = useState(false);
+
+    const visibilityRef = useRef();
 
     const redirectionDatas = {
         prologue: {
@@ -33,7 +35,17 @@ const Header = function () {
         },
     }
 
-    const handleRedirection = function (redirectTo) {
+    useEffect(() => {
+        headerVisibilityFunction.current = handleVisibilityAnimation;
+    }, [])
+
+    const handleVisibilityAnimation = () => {
+        const currentHeader = visibilityRef.current;
+
+        currentHeader.classList.toggle("Is-Visible");
+    }
+
+    const handleRedirection = (redirectTo) => {
         Object.entries(redirectionDatas).map(([key, value], index) => {
             if (value.name === redirectTo) {
                 value.setIsActive(true);
@@ -45,7 +57,7 @@ const Header = function () {
         });
     }
 
-    const redirectButtons = function () {
+    const redirectButtons = () => {
         const res = [];
 
         Object.entries(redirectionDatas).map(([key, value], index) => {
@@ -59,7 +71,7 @@ const Header = function () {
     }
 
     return (
-        <header className="Header">
+        <header className="Header" ref={visibilityRef}>
             <div className='Header-LeftCol'>
                 <button className='Home-Button' >Thomas Raveneau</button>
             </div>
