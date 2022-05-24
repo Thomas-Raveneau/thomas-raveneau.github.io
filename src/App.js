@@ -9,7 +9,7 @@ import Prologue from './Components/Prologue/Prologue';
 
 const App = () => {
   const [isHeaderVisible, _setIsHeaderVisible] = useState(false);
-  const visibilityHeaderHeight = 20;
+  const visibilityHeaderHeight = 100;
   const headerVisibilityRef = useRef(isHeaderVisible);
   const headerVisibilityFunctionRef = useRef(null);
 
@@ -38,6 +38,29 @@ const App = () => {
       <Header headerVisibilityFunction={headerVisibilityFunctionRef}></Header>
       <Intro></Intro>
       <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      <Prologue></Prologue>
+      
     </div>
   );
 }
