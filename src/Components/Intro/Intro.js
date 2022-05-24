@@ -9,14 +9,24 @@ import './Intro.css'
 const Intro = () => {
     return (
         <div className='container'>
-            <div className='image-container'>
-                <img className='image-intro' src={SocialDungeonsIntroImage} alt='tmp'></img>
+            <div className='images-container'>
+                <div className='image-container'>
+                    <img className='image-intro' src={SocialDungeonsIntroImage} alt='tmp'></img>
+                </div>
+                <div className='image-container'>
+                    <img className='image-intro' src={QuakeImage} alt='tmp'></img>
+                </div>
+                <div className='image-container'>
+                    <img className='image-intro' src={ScratchyIntroImage} alt='tmp'></img>
+                </div>
             </div>
-            <div className='image-container'>
-                <img className='image-intro' src={QuakeImage} alt='tmp'></img>
-            </div>
-            <div className='image-container'>
-                <img className='image-intro' src={ScratchyIntroImage} alt='tmp'></img>
+            <div className='texts-container'>
+                <div className='text-container'>
+                    <p className='text name'>THOMAS RAVENEAU</p>
+                </div>
+                <div className='text-container'>
+                    <p className='text job'>Game programmer</p>
+                </div>
             </div>
         </div>
     );

@@ -1,4 +1,4 @@
-.container {
+.images-container {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@
     flex: 1;
     flex-direction: column;
     max-height: 100%;
-    box-shadow: inset 0px 0px 200px 50px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 350px 150px rgba(0, 0, 0, 0.8);
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -25,4 +25,39 @@
     overflow: hidden;
     position: relative;
     z-index: -1;
+}
+
+.texts-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    height: 100vh;
+    top: -20vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.text-container {
+    height: fit-content;
+}
+
+.text {
+    color: whitesmoke;
+    font-weight: 900;
+    margin: 0;
+    font-family: 'Archivo Black', 'Merriweather Sans', sans-serif;
+}
+
+.name {
+    font-size: 5em;
+    letter-spacing: 13px;
+}
+
+.job {
+    font-size: 3em;
+    letter-spacing: 10px;
+
 }
