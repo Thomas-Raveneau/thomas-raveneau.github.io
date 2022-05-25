@@ -38,29 +38,6 @@ const App = () => {
       <Header headerVisibilityFunction={headerVisibilityFunctionRef}></Header>
       <Intro></Intro>
       <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      <Prologue></Prologue>
-      
     </div>
   );
 }

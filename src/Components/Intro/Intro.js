@@ -37,7 +37,7 @@ const Intro = () => {
             </div>
             <div className='arrow-container'>
                 <button className='arrow-button' onClick={handleDownNavigation}>
-                    <img className='arrow-image' src={ArrowDownImage} alt='Double arrow down image to click on'></img>
+                    <img className='arrow-image' src={ArrowDownImage} alt='Double arrow down button'></img>
                 </button>
             </div>
         </div>
