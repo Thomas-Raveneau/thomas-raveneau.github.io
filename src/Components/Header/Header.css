@@ -1,10 +1,7 @@
 .Header {
     display: flex;
     flex: 1;
-    background-color: #018185;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #00858a;
 
     padding-left: 10%;
     padding-right: 10%;
@@ -15,8 +12,11 @@
     left: 0;
     opacity: 0;
 
+    height: 75px;
 
-    transition: .5s;
+    transition: .3s;
+
+    z-index: 1;
 }
 
 .Header.Is-Visible {
@@ -38,7 +38,7 @@
 }
 
 .Home-Button {
-    background-color: #018185;
+    background-color: #00858a;
     
     border: 0;
 
@@ -46,6 +46,7 @@
     font-size: 1.7em;
     font-weight: 900;
     color: #fffffff4;
+    cursor: pointer;
 }
 
 .Home-Button:hover {

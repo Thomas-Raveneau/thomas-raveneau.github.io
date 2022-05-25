@@ -45,6 +45,10 @@ const Header = ({ headerVisibilityFunction }) => {
         currentHeader.classList.toggle("Is-Visible");
     }
 
+    const scrollToTop = () => {
+        window.scroll({ top: 0, behavior: "smooth" });
+    }
+
     const handleRedirection = (redirectTo) => {
         Object.entries(redirectionDatas).map(([key, value], index) => {
             if (value.name === redirectTo) {
@@ -73,7 +77,7 @@ const Header = ({ headerVisibilityFunction }) => {
     return (
         <header className="Header" ref={visibilityRef}>
             <div className='Header-LeftCol'>
-                <button className='Home-Button' >Thomas Raveneau</button>
+                <button className='Home-Button' onClick={scrollToTop}>Thomas Raveneau</button>
             </div>
             <div className='Header-RightCol'>
                 {redirectButtons()}

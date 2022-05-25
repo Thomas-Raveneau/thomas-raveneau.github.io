@@ -9,7 +9,7 @@ import Prologue from './Components/Prologue/Prologue';
 
 const App = () => {
   const [isHeaderVisible, _setIsHeaderVisible] = useState(false);
-  const visibilityHeaderHeight = 100;
+  const visibilityHeaderHeight = 300;
   const headerVisibilityRef = useRef(isHeaderVisible);
   const headerVisibilityFunctionRef = useRef(null);
 

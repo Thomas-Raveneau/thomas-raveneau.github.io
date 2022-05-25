@@ -1,21 +1,23 @@
 import React from 'react';
 
-import QuakeIntroImage from '../../images/QuakeIntroImage.png';
-import SocialDungeonsIntroImage from '../../images/SocialDungeonsIntroImage.png';
-import ScratchyIntroImage from '../../images/ScratchyIntroImage.png'
+import QuakeIntroImage from '../../Images/QuakeIntroImage.png';
+import SocialDungeonsIntroImage from '../../Images/SocialDungeonsIntroImage.png';
+import ScratchyIntroImage from '../../Images/ScratchyIntroImage.png'
 
-import ArrowDownImage from '../../images/arrow-down.svg'
+import ArrowDownImage from '../../Images/arrow-down.svg'
 
 import './Intro.css'
 
 const Intro = () => {
 
-    const handleDownNavigation = () => {
-        console.log("here")
+    const scrollToPrologue = () => {
+        var topOfElement = document.querySelector('#prologue').offsetTop - 73;
+
+        window.scroll({ top: topOfElement, behavior: "smooth" });
     };
 
     return (
-        <div className='container'>
+        <section className='intro-container'>
             <div className='images-container'>
                 <div className='image-container'>
                     <img className='image-intro' src={SocialDungeonsIntroImage} alt='SocialDungeons game by Thomas Raveneau screenshot'></img>
@@ -29,18 +31,18 @@ const Intro = () => {
             </div>
             <div className='texts-container'>
                 <div className='text-container'>
-                    <p className='text name'>THOMAS RAVENEAU</p>
+                    <h1 className='text name'>THOMAS RAVENEAU</h1>
                 </div>
                 <div className='text-container'>
-                    <p className='text job'>Game programmer</p>
+                    <h2 className='text job'>Game programmer</h2>
                 </div>
             </div>
             <div className='arrow-container'>
-                <button className='arrow-button' onClick={handleDownNavigation}>
+                <button className='arrow-button' onClick={scrollToPrologue}>
                     <img className='arrow-image' src={ArrowDownImage} alt='Double arrow down button'></img>
                 </button>
             </div>
-        </div>
+        </section>
     );
 }
 
