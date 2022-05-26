@@ -1,37 +1,29 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import RedirectButton from './RedirectButton';
 
 import './Header.css'
 
-const Header = ({ headerVisibilityFunction }) => {
-    const [prologueActive, setPrologueActive] = useState(true);
-    const [projectsActive, setProjectsActive] = useState(false);
-    const [resumeActive, setResumeActive] = useState(false);
-    const [contactsActive, setContactsActive] = useState(false);
 
+const Header = ({ headerVisibilityFunction }) => {
     const visibilityRef = useRef();
 
     const redirectionDatas = {
         prologue: {
             name: "PROLOGUE",
-            isActive: prologueActive,
-            setIsActive: setPrologueActive
+
         },
         projects: {
-            name: "PROJECTS",
-            isActive: projectsActive,
-            setIsActive: setProjectsActive
+            name: "PORTFOLIO",
+
         },
         resume: {
             name: "RESUME",
-            isActive: resumeActive,
-            setIsActive: setResumeActive
+
         },
         contacts: {
             name: "CONTACTS",
-            isActive: contactsActive,
-            setIsActive: setContactsActive
+
         },
     }
 
@@ -52,10 +44,13 @@ const Header = ({ headerVisibilityFunction }) => {
     const handleRedirection = (redirectTo) => {
         Object.entries(redirectionDatas).map(([key, value], index) => {
             if (value.name === redirectTo) {
-                value.setIsActive(true);
-            }
-            else if (value.isActive) {
-                value.setIsActive(false);
+                var element = document.querySelector('#' + redirectTo);
+
+                if (element) {
+                    var topOfElement = element.offsetTop - 73;
+
+                    window.scroll({ top: topOfElement, behavior: "smooth" });
+                }
             }
             return null;
         });
@@ -66,7 +61,7 @@ const Header = ({ headerVisibilityFunction }) => {
 
         Object.entries(redirectionDatas).map(([key, value], index) => {
             res.push(
-                <RedirectButton key={value.name} name={value.name} isActive={value.isActive} handleRedirection={handleRedirection} />
+                <RedirectButton key={value.name} name={value.name} handleRedirection={handleRedirection} />
             );
             return null;
         });

@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Intro from './Components/Intro/Intro';
 import Prologue from './Components/Prologue/Prologue';
+import Portfolio from './Components/Portfolio/Portfolio';
 
 
 
@@ -35,9 +36,12 @@ const App = () => {
 
   return (
     <div className="App" onScroll={handleHeaderVisibility}>
-      <Header headerVisibilityFunction={headerVisibilityFunctionRef}></Header>
-      <Intro></Intro>
-      <Prologue></Prologue>
+      <Header
+        headerVisibilityFunction={headerVisibilityFunctionRef}
+      />
+      <Intro />
+      <Prologue />
+      <Portfolio />
     </div>
   );
 }

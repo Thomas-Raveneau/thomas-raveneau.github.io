@@ -11,10 +11,14 @@ import './Intro.css'
 const Intro = () => {
 
     const scrollToPrologue = () => {
-        var topOfElement = document.querySelector('#prologue').offsetTop - 73;
+        var element = document.querySelector('#PROLOGUE');
 
-        window.scroll({ top: topOfElement, behavior: "smooth" });
-    };
+        if (element) {
+            var topOfElement = element.offsetTop - 73;
+
+            window.scroll({ top: topOfElement, behavior: "smooth" });
+        };
+    }
 
     return (
         <section className='intro-container'>

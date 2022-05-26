@@ -1,0 +1,4 @@
+.portfolio-container {
+    height: calc(100vh - 70px);
+    background-color: red;
+}

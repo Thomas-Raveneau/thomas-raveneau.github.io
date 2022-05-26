@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useDispatch } from 'react-redux';
 
 import IsElementVisible from '../../Utils/IsElementVisible';
 
@@ -10,14 +11,17 @@ import './Prologue.css'
 
 const Prologue = () => {
     const visibilityRef = useRef();
-    const isVisible = IsElementVisible(visibilityRef, '0px');
+    const isVisible = IsElementVisible(visibilityRef, '-200px');
+    const dispatch = useDispatch();
 
-    if (isVisible) {
-        // console.log("PROLOGUE VISIBLE");
-    }
+    useEffect(() => {
+        if (isVisible) {
+            dispatch({type: 'app/setCurrentSection', newSection: 'PROLOGUE'})
+        }
+    }, [isVisible]);
 
     return (
-        <section className='prologue-container' id='prologue' ref={visibilityRef}>
+        <section className='prologue-container' id='PROLOGUE' ref={visibilityRef}>
             <div className='welcome-container'>
                 <h2 className='part-title-text'>PROLOGUE</h2>
                 <p className='welcome-text'>Welcome to my portofolio website !</p>
