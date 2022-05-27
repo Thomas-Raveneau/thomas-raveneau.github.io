@@ -22,9 +22,9 @@ const Prologue = () => {
 
     return (
         <section className='prologue-container' id='PROLOGUE' ref={visibilityRef}>
-            <div className='welcome-container'>
-                <h2 className='part-title-text'>PROLOGUE</h2>
-                <p className='welcome-text'>Welcome to my portofolio website !</p>
+            <div className='section-title-container'>
+                <h2 className='section-title-text'>PROLOGUE</h2>
+                <p className='section-desc-text'>Welcome to my portofolio website !</p>
             </div>
             <div className='prologue-categories-container'>
                 <div className='category-container'>

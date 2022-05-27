@@ -1,4 +1,44 @@
 .portfolio-container {
-    height: calc(100vh - 70px);
-    background-color: red;
+    background-color: #e1e1e1;
+    padding-bottom: 10vh;
+}
+
+.portofolio-project-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-image-container {
+    flex: 45%;
+    display: flex;
+}
+
+.project-image {
+    width: auto;
+    height: auto;
+    max-width:100%;
+}
+
+.project-text-container {
+    flex: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.light-project-text-container {
+    background-color: #c9c9c9;
+}
+
+.dark-project-text-container {
+    background-color: #c9c9c9;
+}
+
+.project-techno-container {
+
+}
+
+.project-techno-image {
+    width: 4vw;
+    height: auto;
 }

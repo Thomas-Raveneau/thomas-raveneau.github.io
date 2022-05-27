@@ -15,3 +15,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.section-title-container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.section-title-text {
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+
+  font-size: 2.7em;
+  font-weight: 900;
+}
+
+.section-desc-text {
+  margin: 0;
+  margin-bottom: 10vh;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: #888888;
+}
