@@ -7,31 +7,61 @@
     flex: 1;
     display: flex;
     flex-direction: row;
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 8vh;
+
+    background-color: #c9c9c9;
+    border-radius: 25px;
+}
+
+.portofolio-project-container:last-of-type {
+    margin-bottom: 0vh;
 }
 
 .project-image-container {
     flex: 45%;
     display: flex;
+
+    padding: 7vh;
 }
 
 .project-image {
     width: auto;
     height: auto;
     max-width:100%;
+
+    border-radius: 25px;
+    object-fit: cover;
 }
 
 .project-text-container {
     flex: 55%;
     display: flex;
     flex-direction: column;
+    padding-left: 7vh;
+    padding-right: 7vh;
 }
 
-.light-project-text-container {
-    background-color: #c9c9c9;
+.project-title {
+    font-family: 'Archivo Black', 'Merriweather Sans', sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    margin-top: 10px;
 }
 
-.dark-project-text-container {
-    background-color: #c9c9c9;
+.project-title-right {
+    text-align: end;
+}
+
+.project-title-left {
+    text-align: start;
+}
+
+.project-description {
+    text-align: justify;
+    font-size: 1.2em;
 }
 
 .project-techno-container {
