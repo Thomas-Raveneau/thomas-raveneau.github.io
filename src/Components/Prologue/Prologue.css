@@ -21,7 +21,7 @@
 }
 
 .first-category-visible {
-    transition-delay: 0.75s;
+    transition-delay: 0.5s;
     opacity: 1;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .third-category-visible {
-    transition-delay: 2.25s;
+    transition-delay: 2.5s;
     opacity: 1;
 }
 
