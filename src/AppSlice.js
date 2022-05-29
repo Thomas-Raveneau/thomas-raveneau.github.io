@@ -9,7 +9,6 @@ const appSlice = (state = initialAppState, action) => {
         case 'app/setCurrentSection': {
             const newSection = action.newSection;
 
-            console.log('HERE', action.newSection)
             return {
                 ...state,
                 currentSection: newSection

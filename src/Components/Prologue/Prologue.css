@@ -14,6 +14,25 @@
     flex: 1;
     flex-direction: column;
     height: 100%;
+
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.first-category-visible {
+    transition-delay: 0.75s;
+    opacity: 1;
+}
+
+.second-category-visible {
+    transition-delay: 1.5s;
+    opacity: 1;
+}
+
+.third-category-visible {
+    transition-delay: 2.25s;
+    opacity: 1;
 }
 
 .category-icon-container {

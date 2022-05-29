@@ -36,22 +36,19 @@ const Portfolio = () => {
         if (isQuakeVisible) {
             const quakeProjectProjectDiv = quakeVisibilityRef.current;
 
-            if (!quakeProjectProjectDiv.classList.contains('project-visible-right'))
-                quakeProjectProjectDiv.classList.add('project-visible');
+            quakeProjectProjectDiv.classList.add('project-visible');
         }
 
         if (isSocialDungeonsVisible) {
             const socialDungeonsProjectProjectDiv = socialDungeonsVisibilityRef.current;
 
-            if (!socialDungeonsProjectProjectDiv.classList.contains('project-visible'))
             socialDungeonsProjectProjectDiv.classList.add('project-visible');
         }
 
         if (isScratchyVisible) {
             const scratchyProjectProjectDiv = scratchyVisibilityRef.current;
 
-            if (!scratchyProjectProjectDiv.classList.contains('project-visible'))
-                scratchyProjectProjectDiv.classList.add('project-visible');
+            scratchyProjectProjectDiv.classList.add('project-visible');
         }
     }, [isQuakeVisible, isSocialDungeonsVisible, isScratchyVisible]);
 

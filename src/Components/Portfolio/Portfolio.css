@@ -15,7 +15,6 @@
     background-color: #c9c9c9;
     border-radius: 25px;
 
-    transition: 0.8s;
     opacity: 0;
 }
 
@@ -28,6 +27,7 @@
 }
 
 .project-visible {
+    transition: 1.2s;
     opacity: 1;
     transform: translateX(0);
 }
