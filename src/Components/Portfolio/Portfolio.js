@@ -14,23 +14,55 @@ import OpenglImage from '../../Images/opengl.svg'
 import './Portfolio.css';
 
 const Portfolio = () => {
-    const visibilityRef = useRef();
-    const isVisible = IsElementVisible(visibilityRef, '-200px');
     const dispatch = useDispatch();
 
+    const sectionVisibilityRef = useRef();
+    const quakeVisibilityRef = useRef();
+    const socialDungeonsVisibilityRef = useRef();
+    const scratchyVisibilityRef = useRef();
+
+    const isSectionVisible = IsElementVisible(sectionVisibilityRef, '-200px');
+    const isQuakeVisible = IsElementVisible(quakeVisibilityRef, '-200px');
+    const isSocialDungeonsVisible = IsElementVisible(socialDungeonsVisibilityRef, '-200px');
+    const isScratchyVisible = IsElementVisible(scratchyVisibilityRef, '-200px');
+
     useEffect(() => {
-        if (isVisible) {
+        if (isSectionVisible) {
             dispatch({ type: 'app/setCurrentSection', newSection: 'PORTFOLIO' })
         }
-    }, [isVisible]);
+    }, [isSectionVisible]);
+
+    useEffect(() => {
+        if (isQuakeVisible) {
+            const quakeProjectProjectDiv = quakeVisibilityRef.current;
+
+            if (!quakeProjectProjectDiv.classList.contains('project-visible-right'))
+                quakeProjectProjectDiv.classList.add('project-visible');
+        }
+
+        if (isSocialDungeonsVisible) {
+            const socialDungeonsProjectProjectDiv = socialDungeonsVisibilityRef.current;
+
+            if (!socialDungeonsProjectProjectDiv.classList.contains('project-visible'))
+            socialDungeonsProjectProjectDiv.classList.add('project-visible');
+        }
+
+        if (isScratchyVisible) {
+            const scratchyProjectProjectDiv = scratchyVisibilityRef.current;
+
+            if (!scratchyProjectProjectDiv.classList.contains('project-visible'))
+                scratchyProjectProjectDiv.classList.add('project-visible');
+        }
+    }, [isQuakeVisible, isSocialDungeonsVisible, isScratchyVisible]);
+
 
     return (
-        <section className='portfolio-container' id='PORTFOLIO' ref={visibilityRef}>
+        <section className='portfolio-container' id='PORTFOLIO' ref={sectionVisibilityRef}>
             <div className='section-title-container'>
                 <h2 className='section-title-text'>PORTFOLIO</h2>
                 <p className='section-desc-text'>Discover my personal projects !</p>
             </div>
-            <div className='portofolio-project-container'>
+            <div className='portofolio-project-container project-right' ref={quakeVisibilityRef}>
                 <div className='project-image-container'>
                     <img className='project-image' src={QuakeImage} alt='Quake (remake) by Thomas Raveneau screenshot'></img>
                 </div>
@@ -49,7 +81,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <div className='portofolio-project-container'>
+            <div className='portofolio-project-container project-left' ref={socialDungeonsVisibilityRef}>
                 <div className='project-text-container'>
                     <h3 className='project-title project-title-left'>SOCIAL DUNGEONS</h3>
                     <p className='project-description'>
@@ -68,7 +100,7 @@ const Portfolio = () => {
                     <img className='project-image' src={SocialDungeonsImage} alt='Social Dungeons by Thomas Raveneau screenshot'></img>
                 </div>
             </div>
-            <div className='portofolio-project-container'>
+            <div className='portofolio-project-container project-right' ref={scratchyVisibilityRef}>
                 <div className='project-image-container'>
                     <img className='project-image' src={ScratchyImage} alt='Scratchy library by Thomas Raveneau screenshot'></img>
                 </div>

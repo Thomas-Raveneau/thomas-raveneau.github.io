@@ -14,6 +14,22 @@
 
     background-color: #c9c9c9;
     border-radius: 25px;
+
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.project-right {
+    transform: translateX(100vh);
+}
+
+.project-left {
+    transform: translateX(-100vh);
+}
+
+.project-visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .portofolio-project-container:last-of-type {
@@ -30,7 +46,7 @@
 .project-image {
     width: auto;
     height: auto;
-    max-width:100%;
+    max-width: 100%;
 
     border-radius: 25px;
     object-fit: cover;
@@ -64,9 +80,7 @@
     font-size: 1.2em;
 }
 
-.project-techno-container {
-
-}
+.project-techno-container {}
 
 .project-techno-image {
     width: 4vw;
