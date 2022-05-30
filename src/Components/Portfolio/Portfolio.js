@@ -9,7 +9,9 @@ import ScratchyImage from '../../Images/ScratchyIntroImage.png'
 import UnrealImage from '../../Images/unreal.png'
 import CppImage from '../../Images/cpp.svg'
 import GodotImage from '../../Images/godot.png'
-import OpenglImage from '../../Images/opengl.svg'
+import OpenglImage from '../../Images/opengl.png'
+import YoutubeImage from '../../Images/youtube.png'
+import GithubImage from '../../Images/github.png'
 
 import './Portfolio.css';
 
@@ -72,10 +74,32 @@ const Portfolio = () => {
                         Your knowledge of the map will make the difference between victory or defeat by recovering the various bonuses
                         distributed throughout the map at the right time. To your weapons and enjoy!
                     </p>
-                    <div className='project-techno-container'>
-                        <img className='project-techno-image' src={UnrealImage} alt='Unreal Engine logo'></img>
-                        <img className='project-techno-image' src={CppImage} alt='C++ logo'></img>
+                    <div className='project-bottom-container'>
+                        <div className='project-techno-container'>
+                            <img className='project-techno-image' src={UnrealImage} alt='Unreal Engine logo'></img>
+                            <img className='project-techno-image' src={CppImage} alt='C++ logo'></img>
+                        </div>
+                        <div className='project-link-container'>
+                            <button className='project-link-button'>
+                                <div className='project-link-image-container'>
+                                    <img className='project-link-image' src={YoutubeImage} alt='Youtube logo'></img>
+                                </div>
+                                <div className='project-link-text-container'>
+                                    <p className='project-link-text'>Watch trailer</p>
+                                </div>
+                            </button>
+
+                            <button className='project-link-button'>
+                                <div className='project-link-image-container'>
+                                    <img className='project-link-image' src={GithubImage} alt='Github logo'></img>
+                                </div>
+                                <div className='project-link-text-container'>
+                                    <p className='project-link-text'>Source code</p>
+                                </div>
+                            </button>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <div className='portofolio-project-container project-left' ref={socialDungeonsVisibilityRef}>
@@ -89,8 +113,15 @@ const Portfolio = () => {
                         In each dungeon, you will have to kill the final boss in order to complete the dungeon as quickly as you can.
                         Be careful for what awaits you!
                     </p>
-                    <div className='project-techno-container'>
-                        <img className='project-techno-image' src={GodotImage} alt='Godot Engine logo'></img>
+
+                    <div className='project-bottom-container'>
+                        <div className='project-link-container'>
+                            <div>youtube</div>
+                            <div>github</div>
+                        </div>
+                        <div className='project-techno-container'>
+                            <img className='project-techno-image' src={GodotImage} alt='Godot Engine logo'></img>
+                        </div>
                     </div>
                 </div>
                 <div className='project-image-container'>
@@ -109,10 +140,17 @@ const Portfolio = () => {
                         With this you can arrange different 3D and 2D shapes in an environment and add the textures you want.
                         A more advanced version will arrive next year!
                     </p>
-                    <div className='project-techno-container'>
-                        <img className='project-techno-image' src={CppImage} alt='C++ logo'></img>
-                        <img className='project-techno-image' src={OpenglImage} alt='OpenGL logo'></img>
+                    <div className='project-bottom-container'>
+                        <div className='project-techno-container'>
+                            <img className='project-techno-image' src={CppImage} alt='C++ logo'></img>
+                            <img className='project-techno-image project-techno-long-image' src={OpenglImage} alt='OpenGL logo'></img>
+                        </div>
+                        <div className='project-link-container'>
+                            <div>youtube</div>
+                            <div>github</div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
