@@ -1,0 +1,136 @@
+.resume-container {
+    background-color: #f4f4f4;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.resume-separator {
+    border-bottom: 1px solid #888888;
+}
+
+.resume-small-separator-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.resume-small-separator {
+    border-bottom: 1px solid #888888;
+    width: 25vw;
+}
+
+.resume-margin-between {
+    margin-bottom: 8vh;
+}
+
+.resume-name-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.resume-name-text {
+    font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
+    font-size: 5.5em;
+    
+    margin: 0;
+    margin-right: 25px;
+    line-height: 1;
+}
+
+.resume-colored-text {
+    color: #00858a;
+}
+
+.resume-job-text {
+    font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
+    font-size: 2em;
+    color: #888888;
+    text-align: start;
+
+    margin: 0;
+    line-height: 1;
+}
+
+.resume-profile-info-text {
+    text-align: justify;
+    color: #888888;
+    margin: 0;
+}
+
+.resume-category-title-text {
+    font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
+    font-size: 3em;
+    text-align: start;
+}
+
+.resume-content-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.resume-content-left-container {
+    display: flex;
+    flex: 80%;
+    flex-direction: column;
+}
+
+.resume-content-right-container {
+    display: flex;
+    flex: 20%;
+    flex-direction: column;
+}
+
+.resume-content-title-text {
+    font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
+    font-size: 2em;
+    line-height: 1;
+    font-weight: 600;
+
+    text-align: start;
+    margin: 0;
+}
+
+.resume-content-location-text {
+    font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
+    font-size: 1.4em;
+    line-height: 1;
+    color: #888888;
+    font-weight: 300;
+
+    text-align: start;
+    margin: 0;
+}
+
+.resume-content-date {
+    margin: 0;
+    text-align: end;
+}
+
+.resume-content-desc-container {
+    margin-top: 2vh;
+    padding-left: 2vw;
+}
+
+.resume-content-desc-text {
+    color: #888888;
+    text-align: justify;
+    margin-top: 0;
+}
+
+.resume-content-desc-no-margin {
+    margin: 0;
+}
+
+.resume-content-desc-padding {
+    padding-left: 3vw;
+}
+
+.resume-content-bottom-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

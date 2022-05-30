@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Intro from './Components/Intro/Intro';
 import Prologue from './Components/Prologue/Prologue';
 import Portfolio from './Components/Portfolio/Portfolio';
+import Resume from './Resume/Resume';
 
 
 
@@ -42,6 +43,7 @@ const App = () => {
       <Intro />
       <Prologue />
       <Portfolio />
+      <Resume />
     </div>
   );
 }
