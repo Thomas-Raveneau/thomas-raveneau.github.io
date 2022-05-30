@@ -134,3 +134,25 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.resume-skill-category-text {
+    font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
+    font-size: 1.4em;
+    line-height: 1;
+    color: #888888;
+    font-weight: 300;
+
+    text-align: start;
+}
+
+.resume-skill-images-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
+.image-margin {
+    margin-top: 10px;
+}

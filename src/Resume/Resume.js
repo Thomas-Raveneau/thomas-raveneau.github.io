@@ -3,6 +3,25 @@ import { useDispatch } from 'react-redux';
 
 import IsElementVisible from '../Utils/IsElementVisible';
 
+import CImage from '../Images/c.png'
+import CppImage from '../Images/cpp.png'
+import CSharpImage from '../Images/csharp.svg'
+import PythonImage from '../Images/python.png'
+import TypescriptImage from '../Images/typescript.png'
+import SQLImage from '../Images/sql.png'
+
+import UnrealImage from '../Images/unreal.png'
+import GodotImage from '../Images/godot.png'
+import UnityImage from '../Images/unity.png'
+import GitImage from '../Images/git.png'
+import ConsoleImage from '../Images/console.png'
+import VStudioImage from '../Images/visual-studio.png'
+import NodeImage from '../Images/node.png'
+
+import ReactImage from '../Images/react.png'
+import VueImage from '../Images/vuejs.png'
+import ExpressImage from '../Images/express.png'
+
 import './Resume.css';
 
 const Resume = () => {
@@ -23,6 +42,9 @@ const Resume = () => {
                 <h2 className='section-title-text'>RESUME</h2>
                 <p className='section-desc-text'>Know more about my profile !</p>
             </div>
+
+
+
             <div className='resume-separator resume-margin-between'>
                 <div className='resume-margin-between'>
                     <div className='resume-name-container'>
@@ -41,6 +63,9 @@ const Resume = () => {
                     </p>
                 </div>
             </div>
+
+
+
             <div className='resume-separator resume-margin-between'>
                 <h2 className='resume-category-title-text resume-margin-between'>EMPLOYMENT</h2>
                 <div className='resume-content-container resume-margin-between'>
@@ -121,6 +146,9 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
+
+
+
             <div className='resume-separator resume-margin-between'>
                 <h2 className='resume-category-title-text resume-margin-between'>EDUCATION</h2>
                 <div className='resume-content-container resume-margin-between'>
@@ -166,6 +194,42 @@ const Resume = () => {
                     </div>
                     <div className='resume-content-right-container'>
                         <p className='resume-content-date resume-colored-text'>2021 - 2022</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className='resume-separator resume-margin-between'>
+                <h2 className='resume-category-title-text resume-margin-between'>SKILLS</h2>
+                <div className='resume-margin-between'>
+                    <h3 className='resume-skill-category-text'>PROGRAMMING LANGUAGES</h3>
+                    <div className='resume-skill-images-container'>
+                        <img className='project-techno-image image-margin' src={CImage} alt='C logo'></img>
+                        <img className='project-techno-image image-margin' src={CppImage} alt='C++ logo'></img>
+                        <img className='project-techno-image image-margin' src={CSharpImage} alt='C# logo'></img>
+                        <img className='project-techno-image image-margin' src={PythonImage} alt='Python logo'></img>
+                        <img className='project-techno-image image-margin' src={TypescriptImage} alt='Typescript logo'></img>
+                        <img className='project-techno-image image-margin' src={SQLImage} alt='SQL logo'></img>
+                    </div>
+                </div>
+                <div className='resume-margin-between'>
+                    <h3 className='resume-skill-category-text'>GAME ENGINES, IDES & TOOLS</h3>
+                    <div className='resume-skill-images-container'>
+                        <img className='project-techno-image image-margin' src={UnrealImage} alt='Unreal Engine logo'></img>
+                        <img className='project-techno-image image-margin' src={UnityImage} alt='Unity logo'></img>
+                        <img className='project-techno-image image-margin' src={GodotImage} alt='Godot logo'></img>
+                        <img className='project-techno-image image-margin' src={VStudioImage} alt='Visual studio logo'></img>
+                        <img className='project-techno-image image-margin' src={GitImage} alt='Git logo'></img>
+                        <img className='project-techno-image image-margin' src={ConsoleImage} alt='Console logo'></img>
+                        <img className='project-techno-image image-margin' src={NodeImage} alt='Nodejs logo'></img>
+                    </div>
+                </div>
+                <div className='resume-margin-between'>
+                    <h3 className='resume-skill-category-text'>WEB FRAMEWORKS</h3>
+                    <div className='resume-skill-images-container'>
+                        <img className='project-techno-image image-margin' src={ReactImage} alt='Reactjs logo'></img>
+                        <img className='project-techno-image image-margin' src={VueImage} alt='Vuejs logo'></img>
+                        <img className='project-techno-image image-margin' src={ExpressImage} alt='Expressjs logo'></img>
                     </div>
                 </div>
             </div>
