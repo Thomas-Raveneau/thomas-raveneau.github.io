@@ -15,6 +15,10 @@ import GithubImage from '../../Images/github.png'
 
 import './Portfolio.css';
 
+const QuakeSourceLink = 'https://github.com/Thomas-Raveneau/Quake';
+const SocialDungeonsSourceLink = 'https://github.com/Thomas-Raveneau/SocialDungeons';
+const ScratchySourceLink = 'https://github.com/Thomas-Raveneau/Scratchy';
+
 const Portfolio = () => {
     const dispatch = useDispatch();
 
@@ -23,7 +27,7 @@ const Portfolio = () => {
     const socialDungeonsVisibilityRef = useRef();
     const scratchyVisibilityRef = useRef();
 
-    const isSectionVisible = IsElementVisible(sectionVisibilityRef, '-200px');
+    const isSectionVisible = IsElementVisible(sectionVisibilityRef, '-175px');
     const isQuakeVisible = IsElementVisible(quakeVisibilityRef, '-200px');
     const isSocialDungeonsVisible = IsElementVisible(socialDungeonsVisibilityRef, '-200px');
     const isScratchyVisible = IsElementVisible(scratchyVisibilityRef, '-200px');
@@ -54,6 +58,9 @@ const Portfolio = () => {
         }
     }, [isQuakeVisible, isSocialDungeonsVisible, isScratchyVisible]);
 
+    const redirectToLink = (url) => {
+        window.open(url, '_blank').focus();
+    };
 
     return (
         <section className='portfolio-container' id='PORTFOLIO' ref={sectionVisibilityRef}>
@@ -80,21 +87,21 @@ const Portfolio = () => {
                             <img className='project-techno-image' src={CppImage} alt='C++ logo'></img>
                         </div>
                         <div className='project-link-container'>
-                            <button className='project-link-button'>
+                            <button className='project-link-button' onClick={() => { redirectToLink() }}>
                                 <div className='project-link-image-container'>
                                     <img className='project-link-image' src={YoutubeImage} alt='Youtube logo'></img>
                                 </div>
                                 <div className='project-link-text-container'>
-                                    <p className='project-link-text'>Watch trailer</p>
+                                    Watch trailer
                                 </div>
                             </button>
 
-                            <button className='project-link-button'>
+                            <button className='project-link-button' onClick={() => { redirectToLink(QuakeSourceLink) }}>
                                 <div className='project-link-image-container'>
                                     <img className='project-link-image' src={GithubImage} alt='Github logo'></img>
                                 </div>
                                 <div className='project-link-text-container'>
-                                    <p className='project-link-text'>Source code</p>
+                                    Source code
                                 </div>
                             </button>
                         </div>
@@ -113,13 +120,27 @@ const Portfolio = () => {
                         In each dungeon, you will have to kill the final boss in order to complete the dungeon as quickly as you can.
                         Be careful for what awaits you!
                     </p>
-
                     <div className='project-bottom-container'>
-                        <div className='project-link-container'>
-                            <div>youtube</div>
-                            <div>github</div>
+                        <div className='project-link-container project-right'>
+                            <button className='project-link-button' onClick={() => { redirectToLink() }}>
+                                <div className='project-link-image-container'>
+                                    <img className='project-link-image' src={YoutubeImage} alt='Youtube logo'></img>
+                                </div>
+                                <div className='project-link-text-container'>
+                                    Watch trailer
+                                </div>
+                            </button>
+
+                            <button className='project-link-button' onClick={() => { redirectToLink(SocialDungeonsSourceLink) }}>
+                                <div className='project-link-image-container'>
+                                    <img className='project-link-image' src={GithubImage} alt='Github logo'></img>
+                                </div>
+                                <div className='project-link-text-container'>
+                                    Source code
+                                </div>
+                            </button>
                         </div>
-                        <div className='project-techno-container'>
+                        <div className='project-techno-container project-right'>
                             <img className='project-techno-image' src={GodotImage} alt='Godot Engine logo'></img>
                         </div>
                     </div>
@@ -135,7 +156,7 @@ const Portfolio = () => {
                 <div className='project-text-container'>
                     <h3 className='project-title project-title-right'>SCRATCHY</h3>
                     <p className='project-description'>
-                        I present to you my graphic library. It's not very advanced but the goal was more to understand the underside
+                        I present to you my graphics library. It's not very advanced but the goal was more to understand the underside
                         of game engines such as Unreal Engine, Godot or Unity. I am now able to understand how shaders, texturing, texture mapping works.
                         With this you can arrange different 3D and 2D shapes in an environment and add the textures you want.
                         A more advanced version will arrive next year!
@@ -146,8 +167,23 @@ const Portfolio = () => {
                             <img className='project-techno-image project-techno-long-image' src={OpenglImage} alt='OpenGL logo'></img>
                         </div>
                         <div className='project-link-container'>
-                            <div>youtube</div>
-                            <div>github</div>
+                            <button className='project-link-button' onClick={() => { redirectToLink() }}>
+                                <div className='project-link-image-container'>
+                                    <img className='project-link-image' src={YoutubeImage} alt='Youtube logo'></img>
+                                </div>
+                                <div className='project-link-text-container'>
+                                    Watch trailer
+                                </div>
+                            </button>
+
+                            <button className='project-link-button' onClick={() => { redirectToLink(ScratchySourceLink) }}>
+                                <div className='project-link-image-container'>
+                                    <img className='project-link-image' src={GithubImage} alt='Github logo'></img>
+                                </div>
+                                <div className='project-link-text-container'>
+                                    Source code
+                                </div>
+                            </button>
                         </div>
                     </div>
 

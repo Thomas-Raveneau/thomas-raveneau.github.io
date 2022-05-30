@@ -18,7 +18,7 @@ const Prologue = () => {
     const secondCategoryRef = useRef();
     const thirdCategoryRef = useRef();
 
-    const isSectionVisible = IsElementVisible(sectionVisibilityRef, '-200px');
+    const isSectionVisible = IsElementVisible(sectionVisibilityRef, '-175px');
     const isCategoriesVisible = IsElementVisible(categoriesVisibilityRef, '-200px');
 
     useEffect(() => {
