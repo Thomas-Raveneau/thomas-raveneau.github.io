@@ -47,7 +47,7 @@ const Resume = () => {
                     <div className='resume-content-left-container'>
                         <div>
                             <h3 className='resume-content-title-text'>SHAREPOINT DEVELOPPER</h3>
-                            <h4 className='resume-content-location-text'>CEGEDIM, BOULOGNE-BILLANCOURT</h4>
+                            <h4 className='resume-content-location-text'>CEGEDIM, BOULOGNE-BILLANCOURT, FRANCE</h4>
                         </div>
                         <div className='resume-content-desc-container'>
                             <p className='resume-content-desc-text'>During this experience, my mission within the web communication team aimed to accomplish these objectives:</p>
@@ -86,7 +86,7 @@ const Resume = () => {
                     <div className='resume-content-left-container'>
                         <div>
                             <h3 className='resume-content-title-text'>FULLSTACK DEVELOPPER</h3>
-                            <h4 className='resume-content-location-text'>ONEPOINT, PARIS</h4>
+                            <h4 className='resume-content-location-text'>ONEPOINT, PARIS, FRANCE</h4>
                         </div>
                         <div className='resume-content-desc-container'>
                             <p className='resume-content-desc-text'>During this experience, my mission within the DSI team aimed to achieve these objectives:</p>
@@ -118,6 +118,54 @@ const Resume = () => {
                     </div>
                     <div className='resume-content-right-container'>
                         <p className='resume-content-date resume-colored-text'>Jul. 2019 - Dec. 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div className='resume-separator resume-margin-between'>
+                <h2 className='resume-category-title-text resume-margin-between'>EDUCATION</h2>
+                <div className='resume-content-container resume-margin-between'>
+                    <div className='resume-content-left-container'>
+                        <div>
+                            <h3 className='resume-content-title-text'>INFORMATION TECHNOLOGY EXPERT</h3>
+                            <h4 className='resume-content-location-text'>EPITECH, PARIS, FRANCE</h4>
+                        </div>
+                        <div className='resume-content-desc-container'>
+                            <p className='resume-content-desc-text'>Computer development school focusing its education on project-based pedagogy offering students great autonomy. I developed a sense of teamwork, of managing project, as well as the following strong technical skills:</p>
+
+                            <ul className='resume-content-desc-padding'>
+                                <li className='resume-content-desc-text resume-content-desc-no-margin'>Software architecture, object-oriented programming</li>
+                                <li className='resume-content-desc-text resume-content-desc-no-margin'>Multithreading, inter-process communication</li>
+                                <li className='resume-content-desc-text resume-content-desc-no-margin'>Network programming, serialization</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div className='resume-content-right-container'>
+                        <p className='resume-content-date resume-colored-text'>2018 - 2023</p>
+                    </div>
+                </div>
+                <div className='resume-small-separator-container resume-margin-between'>
+                    <div className='resume-small-separator '></div>
+                </div>
+                <div className='resume-content-container resume-margin-between'>
+                    <div className='resume-content-left-container'>
+                        <div>
+                            <h3 className='resume-content-title-text'>GAME DEVELOPMENT</h3>
+                            <h4 className='resume-content-location-text'>KEIMYUNG UNIVERSITY, DAEGU, SOUTH KOREA</h4>
+                        </div>
+                        <div className='resume-content-desc-container'>
+                            <p className='resume-content-desc-text'>Realized as part of a university exchange, I specialized for 1 year in video games by expanding my technical and design skills by studying the following areas in particular:</p>
+
+                            <ul className='resume-content-desc-padding'>
+                                <li className='resume-content-desc-text resume-content-desc-no-margin'>Computer graphics</li>
+                                <li className='resume-content-desc-text resume-content-desc-no-margin'>Game design</li>
+                                <li className='resume-content-desc-text resume-content-desc-no-margin'>3D modeling, rigging and animation</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div className='resume-content-right-container'>
+                        <p className='resume-content-date resume-colored-text'>2021 - 2022</p>
                     </div>
                 </div>
             </div>
