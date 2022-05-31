@@ -83,8 +83,8 @@ const Portfolio = () => {
                     </p>
                     <div className='project-bottom-container'>
                         <div className='project-techno-container'>
-                            <img className='project-techno-image' src={UnrealImage} alt='Unreal Engine logo'></img>
-                            <img className='project-techno-image' src={CppImage} alt='C++ logo'></img>
+                            <img className='project-techno-image' src={UnrealImage} alt='Unreal Engine logo' title='Unreal Engine'></img>
+                            <img className='project-techno-image' src={CppImage} alt='C++ logo' title='C++'></img>
                         </div>
                         <div className='project-link-container'>
                             <button className='project-link-button' onClick={() => { redirectToLink() }}>
@@ -141,7 +141,7 @@ const Portfolio = () => {
                             </button>
                         </div>
                         <div className='project-techno-container project-right'>
-                            <img className='project-techno-image' src={GodotImage} alt='Godot Engine logo'></img>
+                            <img className='project-techno-image' src={GodotImage} alt='Godot Engine logo' title='Godot'></img>
                         </div>
                     </div>
                 </div>
@@ -163,8 +163,8 @@ const Portfolio = () => {
                     </p>
                     <div className='project-bottom-container'>
                         <div className='project-techno-container'>
-                            <img className='project-techno-image' src={CppImage} alt='C++ logo'></img>
-                            <img className='project-techno-image project-techno-long-image' src={OpenglImage} alt='OpenGL logo'></img>
+                            <img className='project-techno-image' src={CppImage} alt='C++ logo' title='C++'></img>
+                            <img className='project-techno-image project-techno-long-image' src={OpenglImage} alt='OpenGL logo' title='OpenGL'></img>
                         </div>
                         <div className='project-link-container'>
                             <button className='project-link-button' onClick={() => { redirectToLink() }}>

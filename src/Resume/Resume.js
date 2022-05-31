@@ -104,9 +104,6 @@ const Resume = () => {
                         <p className='resume-content-date resume-colored-text'>Oct. 2020 - Jul. 2021</p>
                     </div>
                 </div>
-                <div className='resume-small-separator-container resume-margin-between'>
-                    <div className='resume-small-separator '></div>
-                </div>
                 <div className='resume-content-container resume-margin-between'>
                     <div className='resume-content-left-container'>
                         <div>
@@ -172,9 +169,6 @@ const Resume = () => {
                         <p className='resume-content-date resume-colored-text'>2018 - 2023</p>
                     </div>
                 </div>
-                <div className='resume-small-separator-container resume-margin-between'>
-                    <div className='resume-small-separator '></div>
-                </div>
                 <div className='resume-content-container resume-margin-between'>
                     <div className='resume-content-left-container'>
                         <div>
@@ -204,33 +198,43 @@ const Resume = () => {
                 <div className='resume-margin-between'>
                     <h3 className='resume-skill-category-text'>PROGRAMMING LANGUAGES</h3>
                     <div className='resume-skill-images-container'>
-                        <img className='project-techno-image image-margin' src={CImage} alt='C logo'></img>
-                        <img className='project-techno-image image-margin' src={CppImage} alt='C++ logo'></img>
-                        <img className='project-techno-image image-margin' src={CSharpImage} alt='C# logo'></img>
-                        <img className='project-techno-image image-margin' src={PythonImage} alt='Python logo'></img>
-                        <img className='project-techno-image image-margin' src={TypescriptImage} alt='Typescript logo'></img>
-                        <img className='project-techno-image image-margin' src={SQLImage} alt='SQL logo'></img>
+                        <img className='project-techno-image image-margin' src={CImage} alt='C logo' title='C'></img>
+                        <img className='project-techno-image image-margin' src={CppImage} alt='C++ logo' title='C++'></img>
+                        <img className='project-techno-image image-margin' src={CSharpImage} alt='C# logo' title='C#'></img>
+                        <img className='project-techno-image image-margin' src={PythonImage} alt='Python logo' title='Python'></img>
+                        <img className='project-techno-image image-margin' src={TypescriptImage} alt='Typescript logo' title='Typescript'></img>
+                        <img className='project-techno-image image-margin' src={SQLImage} alt='SQL logo' title='SQL'></img>
                     </div>
                 </div>
                 <div className='resume-margin-between'>
                     <h3 className='resume-skill-category-text'>GAME ENGINES, IDES & TOOLS</h3>
                     <div className='resume-skill-images-container'>
-                        <img className='project-techno-image image-margin' src={UnrealImage} alt='Unreal Engine logo'></img>
-                        <img className='project-techno-image image-margin' src={UnityImage} alt='Unity logo'></img>
-                        <img className='project-techno-image image-margin' src={GodotImage} alt='Godot logo'></img>
-                        <img className='project-techno-image image-margin' src={VStudioImage} alt='Visual studio logo'></img>
-                        <img className='project-techno-image image-margin' src={GitImage} alt='Git logo'></img>
-                        <img className='project-techno-image image-margin' src={ConsoleImage} alt='Console logo'></img>
-                        <img className='project-techno-image image-margin' src={NodeImage} alt='Nodejs logo'></img>
+                        <img className='project-techno-image image-margin' src={UnrealImage} alt='Unreal Engine logo' title='Unreal Engin'></img>
+                        <img className='project-techno-image image-margin' src={UnityImage} alt='Unity logo' title='Unity'></img>
+                        <img className='project-techno-image image-margin' src={GodotImage} alt='Godot logo' title='Godot'></img>
+                        <img className='project-techno-image image-margin' src={VStudioImage} alt='Visual studio logo' title='Visual Studio'></img>
+                        <img className='project-techno-image image-margin' src={GitImage} alt='Git logo' title=''Git></img>
+                        <img className='project-techno-image image-margin' src={ConsoleImage} alt='Console logo' title='Bash'></img>
+                        <img className='project-techno-image image-margin' src={NodeImage} alt='Nodejs logo' title='Node.JS'></img>
                     </div>
                 </div>
                 <div className='resume-margin-between'>
                     <h3 className='resume-skill-category-text'>WEB FRAMEWORKS</h3>
                     <div className='resume-skill-images-container'>
-                        <img className='project-techno-image image-margin' src={ReactImage} alt='Reactjs logo'></img>
-                        <img className='project-techno-image image-margin' src={VueImage} alt='Vuejs logo'></img>
-                        <img className='project-techno-image image-margin' src={ExpressImage} alt='Expressjs logo'></img>
+                        <img className='project-techno-image image-margin' src={ReactImage} alt='Reactjs logo' title='React.JS'></img>
+                        <img className='project-techno-image image-margin' src={VueImage} alt='Vuejs logo' title='Vue.JS'></img>
+                        <img className='project-techno-image image-margin' src={ExpressImage} alt='Expressjs logo' title='Express.JS'></img>
                     </div>
+                </div>
+            </div>
+
+            <div className='resume-separator resume-margin-between'>
+                <h2 className='resume-category-title-text resume-margin-between'>INTERESTS</h2>
+                <div className='resume-margin-between'>
+                    <p className='resume-content-desc-text'>Apart from developing games, I like to play them a lot and that's what allowed me to acquire a lot of knowledge on how video games work.</p>
+                    <p className='resume-content-desc-text'>Also I really like sports that challenge me like tennis, which I have been playing since I was 7 years old, and rock climbing in a natural environment.</p>
+                    <p className='resume-content-desc-text'>Art in general is a big source of inspiration for me and those who touch me the most obviously include video games, but cinema and music will reach in me indescribable emotions that I would like to develop one day and pass them on to others through my future projects.</p>
+                    <p className='resume-content-desc-text'>There are also interests that I develop through Youtube videos, such as cooking from which I like to learn new techniques that I try to reproduce, space and astonomy both for its scientific side, its immensity and the infinity that defines it.</p>
                 </div>
             </div>
         </section>
