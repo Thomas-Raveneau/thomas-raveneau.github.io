@@ -58,8 +58,15 @@ const Contacts = () => {
                     </div>
                 </div>
                 <div className='contacts-content-container-right'>
-
+                    <p className='contacts-content-text'>I am Thomas Raveneau studying at Epitech Paris. I am game programmer who wants to give pleasure to others through my games. I you liked my work, let's get in contact !</p>
+                    <p className='contacts-content-text'>Since my childhood, I always had interest in video games, I remember playing video games on my dad's PS1 & PS2, games like Tomb Raider, Tekken and then Zelda on my own Gameboy and now playing great video games that I enjoy a lot on my PC. I love listening to music, watching movies, basically I love when stories are told to me, it's bringing a lot of feelings to me.</p>
+                    <p className='contacts-content-text'>Discovering video games when I was a kid was only the beginning. Since highschool I learned programming and naturally I've fallen into video game development, starting by developping a Monopoly game in Python, then learning about game engines like Unreal, Unity or Godot.</p>
+                    <p className='contacts-content-text'>I love to talk about my passions and technological advances, not only in video games industry but in all kinds of technology.</p>
                 </div>
+            </div>
+            <div className='contacts-thanks-container'>
+                <p className='contacts-thanks-text'>Thank you for visiting my portfolio.</p>
+                <p className='contacts-thanks-text'>Enjoy your day !</p>
             </div>
         </section>
     );

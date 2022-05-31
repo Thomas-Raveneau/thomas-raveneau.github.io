@@ -14,12 +14,17 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    margin-right: 20px;
 }
 
 .contacts-content-container-right {
     display: flex;
     flex: 3;
     flex-direction: column;
+    margin-left: 20px;
+
+    margin-top: 30px;
+    /* justify-content: center; */
 }
 
 .contacts-profile-image-container {
@@ -91,4 +96,25 @@
 .contacts-link-button:hover {
     transition: 0.5s;
     background-color: #00858a;
+}
+
+.contacts-content-text {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.contacts-thanks-container {
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+}
+
+.contacts-thanks-text {
+    color: #888888;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.85em;
+    font-style: italic;
+    margin:2px;
 }
