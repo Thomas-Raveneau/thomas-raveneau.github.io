@@ -24,6 +24,8 @@ import ExpressImage from '../Images/express.png';
 
 import DownloadImage from '../Images/download.png';
 
+import ResumeFile from '../Files/Thomas_Raveneau_Resume.pdf';
+
 import './Resume.css';
 
 const Resume = () => {
@@ -37,10 +39,6 @@ const Resume = () => {
             dispatch({ type: 'app/setCurrentSection', newSection: 'RESUME' })
         }
     }, [isSectionVisible]);
-
-    const DownloadResume = () => {
-
-    };
 
     return (
         <section className='resume-container' id='RESUME' ref={sectionVisibilityRef}>
@@ -219,7 +217,7 @@ const Resume = () => {
                         <img className='project-techno-image image-margin' src={UnityImage} alt='Unity logo' title='Unity'></img>
                         <img className='project-techno-image image-margin' src={GodotImage} alt='Godot logo' title='Godot'></img>
                         <img className='project-techno-image image-margin' src={VStudioImage} alt='Visual studio logo' title='Visual Studio'></img>
-                        <img className='project-techno-image image-margin' src={GitImage} alt='Git logo' title='' Git></img>
+                        <img className='project-techno-image image-margin' src={GitImage} alt='Git logo' title='Git'></img>
                         <img className='project-techno-image image-margin' src={ConsoleImage} alt='Console logo' title='Bash'></img>
                         <img className='project-techno-image image-margin' src={NodeImage} alt='Nodejs logo' title='Node.JS'></img>
                     </div>
@@ -245,14 +243,14 @@ const Resume = () => {
             </div>
 
             <div className='resume-download-button-container'>
-                <button className='resume-download-button' onClick={() => { DownloadResume() }}>
+                <a className='resume-download-button' href={ResumeFile} download='Thomas_Raveneau_Resume.pdf'>
                     <div className='resume-download-image-container'>
                         <img className='resume-download-image' src={DownloadImage} alt='Download icon'></img>
                     </div>
                     <div className='resume-download-text-container'>
                         Download resume
                     </div>
-                </button>
+                </a>
             </div>
         </section>
     );
