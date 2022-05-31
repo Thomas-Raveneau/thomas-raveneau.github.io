@@ -7,7 +7,7 @@ import SkillsCategoryIcon from '../../Images/SkillsCategoryIcon.png';
 import EducationCategoryIcon from '../../Images/EducationCategoryIcon.png';
 import HobbiesCategoryIcon from '../../Images/HobbiesCategoryIcon.png';
 
-import './Prologue.css'
+import './Prologue.css';
 
 const Prologue = () => {
     const dispatch = useDispatch();

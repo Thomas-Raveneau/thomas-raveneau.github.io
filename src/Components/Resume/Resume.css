@@ -1,7 +1,7 @@
 .resume-container {
     background-color: #f4f4f4;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .resume-separator {
@@ -41,9 +41,9 @@
 .profile-container-right {
     display: flex;
     flex: 1;
-    background-color: #00858a;
+    background-color: #888888;
     border-radius: 50%;
-    border: 6px solid #00858a;
+    border: 6px solid #888888;
     overflow: hidden;
 }
 

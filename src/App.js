@@ -6,6 +6,7 @@ import Intro from './Components/Intro/Intro';
 import Prologue from './Components/Prologue/Prologue';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Resume from './Components/Resume/Resume';
+import Contacts from './Components/Contacts/Contacts';
 
 
 
@@ -44,6 +45,7 @@ const App = () => {
       <Prologue />
       <Portfolio />
       <Resume />
+      <Contacts />
     </div>
   );
 }
