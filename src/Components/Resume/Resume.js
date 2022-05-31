@@ -24,6 +24,9 @@ import ReactImage from '../../Images/react.png';
 import VueImage from '../../Images/vuejs.png';
 import ExpressImage from '../../Images/express.png';
 
+import FrenchImage from '../../Images/french.png';
+import EnglishImage from '../../Images/english.png';
+
 import DownloadImage from '../../Images/download.png';
 
 import ResumeFile from '../../Files/Thomas_Raveneau_Resume.pdf';
@@ -235,6 +238,13 @@ const Resume = () => {
                         <img className='project-techno-image image-margin' src={ReactImage} alt='Reactjs logo' title='React.JS'></img>
                         <img className='project-techno-image image-margin' src={VueImage} alt='Vuejs logo' title='Vue.JS'></img>
                         <img className='project-techno-image image-margin' src={ExpressImage} alt='Expressjs logo' title='Express.JS'></img>
+                    </div>
+                </div>
+                <div className='resume-margin-between'>
+                    <h3 className='resume-skill-category-text'>LANGUAGES</h3>
+                    <div className='resume-skill-images-container'>
+                        <img className='project-techno-image image-margin' src={FrenchImage} alt='French flag' title='French'></img>
+                        <img className='project-techno-image image-margin' src={EnglishImage} alt='United Kingdoms flag' title='English'></img>
                     </div>
                 </div>
             </div>
