@@ -3,24 +3,26 @@ import { useDispatch } from 'react-redux';
 
 import IsElementVisible from '../Utils/IsElementVisible';
 
-import CImage from '../Images/c.png'
-import CppImage from '../Images/cpp.png'
-import CSharpImage from '../Images/csharp.svg'
-import PythonImage from '../Images/python.png'
-import TypescriptImage from '../Images/typescript.png'
-import SQLImage from '../Images/sql.png'
+import CImage from '../Images/c.png';
+import CppImage from '../Images/cpp.png';
+import CSharpImage from '../Images/csharp.svg';
+import PythonImage from '../Images/python.png';
+import TypescriptImage from '../Images/typescript.png';
+import SQLImage from '../Images/sql.png';
 
-import UnrealImage from '../Images/unreal.png'
-import GodotImage from '../Images/godot.png'
-import UnityImage from '../Images/unity.png'
-import GitImage from '../Images/git.png'
-import ConsoleImage from '../Images/console.png'
-import VStudioImage from '../Images/visual-studio.png'
-import NodeImage from '../Images/node.png'
+import UnrealImage from '../Images/unreal.png';
+import GodotImage from '../Images/godot.png';
+import UnityImage from '../Images/unity.png';
+import GitImage from '../Images/git.png';
+import ConsoleImage from '../Images/console.png';
+import VStudioImage from '../Images/visual-studio.png';
+import NodeImage from '../Images/node.png';
 
-import ReactImage from '../Images/react.png'
-import VueImage from '../Images/vuejs.png'
-import ExpressImage from '../Images/express.png'
+import ReactImage from '../Images/react.png';
+import VueImage from '../Images/vuejs.png';
+import ExpressImage from '../Images/express.png';
+
+import DownloadImage from '../Images/download.png';
 
 import './Resume.css';
 
@@ -35,6 +37,10 @@ const Resume = () => {
             dispatch({ type: 'app/setCurrentSection', newSection: 'RESUME' })
         }
     }, [isSectionVisible]);
+
+    const DownloadResume = () => {
+
+    };
 
     return (
         <section className='resume-container' id='RESUME' ref={sectionVisibilityRef}>
@@ -213,7 +219,7 @@ const Resume = () => {
                         <img className='project-techno-image image-margin' src={UnityImage} alt='Unity logo' title='Unity'></img>
                         <img className='project-techno-image image-margin' src={GodotImage} alt='Godot logo' title='Godot'></img>
                         <img className='project-techno-image image-margin' src={VStudioImage} alt='Visual studio logo' title='Visual Studio'></img>
-                        <img className='project-techno-image image-margin' src={GitImage} alt='Git logo' title=''Git></img>
+                        <img className='project-techno-image image-margin' src={GitImage} alt='Git logo' title='' Git></img>
                         <img className='project-techno-image image-margin' src={ConsoleImage} alt='Console logo' title='Bash'></img>
                         <img className='project-techno-image image-margin' src={NodeImage} alt='Nodejs logo' title='Node.JS'></img>
                     </div>
@@ -228,7 +234,7 @@ const Resume = () => {
                 </div>
             </div>
 
-            <div className='resume-separator resume-margin-between'>
+            <div className='resume-margin-between'>
                 <h2 className='resume-category-title-text resume-margin-between'>INTERESTS</h2>
                 <div className='resume-margin-between'>
                     <p className='resume-content-desc-text'>Apart from developing games, I like to play them a lot and that's what allowed me to acquire a lot of knowledge on how video games work.</p>
@@ -236,6 +242,17 @@ const Resume = () => {
                     <p className='resume-content-desc-text'>Art in general is a big source of inspiration for me and those who touch me the most obviously include video games, but cinema and music will reach in me indescribable emotions that I would like to develop one day and pass them on to others through my future projects.</p>
                     <p className='resume-content-desc-text'>There are also interests that I develop through Youtube videos, such as cooking from which I like to learn new techniques that I try to reproduce, space and astonomy both for its scientific side, its immensity and the infinity that defines it.</p>
                 </div>
+            </div>
+
+            <div className='resume-download-button-container'>
+                <button className='resume-download-button' onClick={() => { DownloadResume() }}>
+                    <div className='resume-download-image-container'>
+                        <img className='resume-download-image' src={DownloadImage} alt='Download icon'></img>
+                    </div>
+                    <div className='resume-download-text-container'>
+                        Download resume
+                    </div>
+                </button>
             </div>
         </section>
     );

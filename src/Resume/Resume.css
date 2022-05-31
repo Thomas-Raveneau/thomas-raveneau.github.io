@@ -33,7 +33,7 @@
 .resume-name-text {
     font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
     font-size: 5.5em;
-    
+
     margin: 0;
     margin-right: 25px;
     line-height: 1;
@@ -155,4 +155,74 @@
 
 .image-margin {
     margin-top: 10px;
+}
+
+.resume-download-button-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+    justify-content: center;
+
+    padding-bottom: 10vh;
+}
+
+.resume-download-button {
+    display: flex;
+    flex-direction: row;
+
+    border: 0;
+    border-radius: 15px;
+
+    background-color: #e1e1e1;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    cursor: pointer;
+
+    height: 100%;
+    min-height: 100%;
+}
+
+.resume-download-image-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.resume-download-image {
+    display: block;
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+
+.resume-download-text-container {
+    min-height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+
+    overflow: hidden;
+    white-space: nowrap;
 }
