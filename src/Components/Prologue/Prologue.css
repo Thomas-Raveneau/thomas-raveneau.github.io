@@ -16,22 +16,22 @@
     height: 100%;
 
     opacity: 0;
-    transition: 1s;
+    transition: 0.75s;
 
 }
 
 .first-category-visible {
-    transition-delay: 0.5s;
+    /* transition-delay: 0.5s; */
     opacity: 1;
 }
 
 .second-category-visible {
-    transition-delay: 1.5s;
+    transition-delay: 0.8s;
     opacity: 1;
 }
 
 .third-category-visible {
-    transition-delay: 2.5s;
+    transition-delay: 1.6s;
     opacity: 1;
 }
 
