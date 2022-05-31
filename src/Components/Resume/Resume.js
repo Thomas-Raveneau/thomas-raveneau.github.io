@@ -1,30 +1,32 @@
 import React, { useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 
-import IsElementVisible from '../Utils/IsElementVisible';
+import IsElementVisible from '../../Utils/IsElementVisible';
 
-import CImage from '../Images/c.png';
-import CppImage from '../Images/cpp.png';
-import CSharpImage from '../Images/csharp.svg';
-import PythonImage from '../Images/python.png';
-import TypescriptImage from '../Images/typescript.png';
-import SQLImage from '../Images/sql.png';
+import ProfilePicture from '../../Images/profilepicture.jpg';
 
-import UnrealImage from '../Images/unreal.png';
-import GodotImage from '../Images/godot.png';
-import UnityImage from '../Images/unity.png';
-import GitImage from '../Images/git.png';
-import ConsoleImage from '../Images/console.png';
-import VStudioImage from '../Images/visual-studio.png';
-import NodeImage from '../Images/node.png';
+import CImage from '../../Images/c.png';
+import CppImage from '../../Images/cpp.png';
+import CSharpImage from '../../Images/csharp.svg';
+import PythonImage from '../../Images/python.png';
+import TypescriptImage from '../../Images/typescript.png';
+import SQLImage from '../../Images/sql.png';
 
-import ReactImage from '../Images/react.png';
-import VueImage from '../Images/vuejs.png';
-import ExpressImage from '../Images/express.png';
+import UnrealImage from '../../Images/unreal.png';
+import GodotImage from '../../Images/godot.png';
+import UnityImage from '../../Images/unity.png';
+import GitImage from '../../Images/git.png';
+import ConsoleImage from '../../Images/console.png';
+import VStudioImage from '../../Images/visual-studio.png';
+import NodeImage from '../../Images/node.png';
 
-import DownloadImage from '../Images/download.png';
+import ReactImage from '../../Images/react.png';
+import VueImage from '../../Images/vuejs.png';
+import ExpressImage from '../../Images/express.png';
 
-import ResumeFile from '../Files/Thomas_Raveneau_Resume.pdf';
+import DownloadImage from '../../Images/download.png';
+
+import ResumeFile from '../../Files/Thomas_Raveneau_Resume.pdf';
 
 import './Resume.css';
 
@@ -50,13 +52,18 @@ const Resume = () => {
 
 
             <div className='resume-separator resume-margin-between'>
-                <div className='resume-margin-between'>
-                    <div className='resume-name-container'>
-                        <h1 className='resume-name-text resume-colored-text'>THOMAS</h1>
-                        <h1 className='resume-name-text'>RAVENEAU</h1>
+                <div className='profile-container resume-margin-between'>
+                    <div className='profile-container-left'>
+                        <h1 className='resume-name-container'>
+                            <span className='resume-name-text resume-colored-text'>THOMAS</span>
+                            <span  className='resume-name-text'>RAVENEAU</span>
+                        </h1>
+                        <div>
+                            <h2 className='resume-job-text'>GAME PROGRAMMER</h2>
+                        </div>
                     </div>
-                    <div>
-                        <h2 className='resume-job-text'>GAME PROGRAMMER</h2>
+                    <div className='profile-container-right'>
+                        <img src={ProfilePicture} className='profile-picture-image' alt='Thomas Raveneau'></img>
                     </div>
                 </div>
                 <div className='resume-margin-between'>

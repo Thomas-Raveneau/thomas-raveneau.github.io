@@ -24,19 +24,49 @@
     margin-bottom: 8vh;
 }
 
-.resume-name-container {
+.profile-container {
     display: flex;
     flex: 1;
     flex-direction: row;
 }
 
+.profile-container-left {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.profile-container-right {
+    display: flex;
+    flex: 1;
+    background-color: #00858a;
+    border-radius: 50%;
+    border: 6px solid #00858a;
+    overflow: hidden;
+}
+
+.profile-picture-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+.resume-name-container {
+    font-size: 5.5em;
+    text-align: start;
+    margin: 0;
+}
+
 .resume-name-text {
     font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
-    font-size: 5.5em;
 
     margin: 0;
     margin-right: 25px;
     line-height: 1;
+    height: fit-content;
 }
 
 .resume-colored-text {
