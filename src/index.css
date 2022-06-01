@@ -12,7 +12,8 @@ body {
 }
 
 html {
-  overflow-x: hidden;
+  /* Disable x scrolling */
+  /* overflow-x: hidden; */
 }
 
 code {
@@ -24,7 +25,27 @@ code {
   min-width: 100vw;
   width: 100vw;
   min-height: 100vh;
-} 
+}
+
+.py-category {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.p-category {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+.bg-category-dark {
+  background-color: #e1e1e1;
+}
+
+.bg-category-light {
+  background-color: #fbfbfb;
+}
 
 .section-title-container {
   height: fit-content;
@@ -34,7 +55,6 @@ code {
 }
 
 .section-title-text {
-  margin-top: 10vh;
   margin-bottom: 2vh;
 
   font-size: 2.7em;
@@ -48,4 +68,11 @@ code {
   letter-spacing: 2px;
   font-style: italic;
   color: #888888;
+}
+
+@media (max-width: 992px) {
+  .p-category {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
 }

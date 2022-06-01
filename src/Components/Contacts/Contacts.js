@@ -31,7 +31,7 @@ const Contacts = () => {
     };
 
     return (
-        <section className='contacts-container' id='CONTACTS' ref={sectionVisibilityRef}>
+        <section className='container-fluid fill bg-category-dark p-category' id='CONTACTS' ref={sectionVisibilityRef}>
             <div className='section-title-container'>
                 <h2 className='section-title-text'>CONTACTS</h2>
                 <p className='section-desc-text'>Do not hesitate to contact me anytime, anywhere !</p>

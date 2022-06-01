@@ -124,12 +124,6 @@
 }
 
 @media (max-width: 992px) {
-    .over-text-container {
-        top: 30%;
-    }
-}
-
-@media (max-width: 992px) {
     .image-container {
         width: 100vw;
         height: auto;
@@ -137,5 +131,9 @@
     .image-intro {
         width: 100vw;
         height: 100%;
+    }
+
+    .over-text-container {
+        top: 30%;
     }
 }

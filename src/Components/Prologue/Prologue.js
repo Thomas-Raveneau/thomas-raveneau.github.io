@@ -40,14 +40,14 @@ const Prologue = () => {
     }, [isCategoriesVisible]);
 
     return (
-        <section className='container-fluid fill p-0' id='PROLOGUE' ref={sectionVisibilityRef}>
+        <section className='container-fluid fill bg-category-light py-category' id='PROLOGUE' ref={sectionVisibilityRef}>
             <div className='section-title-container'>
                 <h2 className='section-title-text'>PROLOGUE</h2>
                 <p className='section-desc-text'>Welcome to my portofolio website !</p>
             </div>
             <div className='row justify-content-center' ref={categoriesVisibilityRef}>
                 <div className='col-lg-4 col-md-12 mb-5 category-container' ref={firstCategoryRef}>
-                    <div className='category-icon-container'>
+                    <div className='category-icon-container mb-3'>
                         <div className='category-icon-border'>
                             <img className='category-icon' src={SkillsCategoryIcon} alt='Skills category icon'></img>
                         </div>
@@ -58,7 +58,7 @@ const Prologue = () => {
                     <p className='category-content'>React.JS, React native, Vue.JS</p>
                 </div>
                 <div className='col-lg-4 col-md-12 mb-5 category-container' ref={secondCategoryRef}>
-                    <div className='category-icon-container'>
+                    <div className='category-icon-container mb-3'>
                         <div className='category-icon-border'>
                             <img className='category-icon' src={EducationCategoryIcon} alt='Education category icon'></img>
                         </div>
@@ -67,8 +67,8 @@ const Prologue = () => {
                     <p className='category-content'>EPITECH, Paris, France</p>
                     <p className='category-content'>Keimyung University, Daegu, South Korea</p>
                 </div>
-                <div className='col-lg-4 col-md-12 pb-5 category-container' ref={thirdCategoryRef}>
-                    <div className='category-icon-container'>
+                <div className='col-lg-4 col-md-12 category-container' ref={thirdCategoryRef}>
+                    <div className='category-icon-container mb-3'>
                         <div className='category-icon-border'>
                             <img className='category-icon' src={HobbiesCategoryIcon} alt='Hobbies category icon'></img>
                         </div>

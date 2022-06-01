@@ -46,7 +46,7 @@ const Resume = () => {
     }, [isSectionVisible]);
 
     return (
-        <section className='resume-container' id='RESUME' ref={sectionVisibilityRef}>
+        <section className='container-fluid fill bg-category-light p-category' id='RESUME' ref={sectionVisibilityRef}>
             <div className='section-title-container'>
                 <h2 className='section-title-text'>RESUME</h2>
                 <p className='section-desc-text'>Know more about my profile !</p>
