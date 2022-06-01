@@ -1,27 +1,11 @@
-.prologue-container {
-    height: calc(100vh - 70px);
-    background-color: #f4f4f4;
-}
-
-.prologue-categories-container {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-}
-
 .category-container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     height: 100%;
 
     opacity: 0;
     transition: 0.75s;
-
 }
 
 .first-category-visible {
-    /* transition-delay: 0.5s; */
     opacity: 1;
 }
 

@@ -23,13 +23,13 @@ const Intro = () => {
     return (
         <section className='container-fluid bg-color p-0'>
             <div className='row fill m-0'>
-                <div className='col-lg-4 col-md-12 col-sm-12 p-0 image-container'>
+                <div className='col-lg-4 col-md-12 p-0 image-container'>
                     <img className='image-intro' src={SocialDungeonsIntroImage} alt='SocialDungeons game by Thomas Raveneau screenshot'></img>
                 </div>
-                <div className='col-lg-4 col-md-12 col-sm-12 p-0 image-container'>
+                <div className='col-lg-4 col-md-12 p-0 image-container'>
                     <img className='image-intro' src={QuakeIntroImage} alt='Quake (remake) game by Thomas Raveneau screenshot'></img>
                 </div>
-                <div className='col-lg-4 col-md-12 col-sm-12 p-0 image-container'>
+                <div className='col-lg-4 col-md-12 p-0 image-container'>
                     <img className='image-intro' src={ScratchyIntroImage} alt='Scratcy graphical library by Thomas Raveneau screenshot'></img>
                 </div>
             </div>

@@ -16,7 +16,7 @@
 
     transition: .3s;
 
-    z-index: 1;
+    z-index: 2;
 }
 
 .Header.Is-Visible {

@@ -20,6 +20,12 @@ code {
     monospace;
 }
 
+.fill {
+  min-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
+} 
+
 .section-title-container {
   height: fit-content;
   display: flex;
