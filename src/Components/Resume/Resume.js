@@ -52,11 +52,9 @@ const Resume = () => {
                 <p className='section-desc-text'>Know more about my profile !</p>
             </div>
 
-
-
             <div className='resume-separator resume-margin-between'>
-                <div className='profile-container resume-margin-between'>
-                    <div className='profile-container-left'>
+                <div className='row profile-container resume-margin-between'>
+                    <div className='col-lg-8 profile-container-left'>
                         <h1 className='resume-name-container'>
                             <span className='resume-name-text resume-colored-text'>THOMAS</span>
                             <span  className='resume-name-text'>RAVENEAU</span>
@@ -65,7 +63,7 @@ const Resume = () => {
                             <h2 className='resume-job-text'>GAME PROGRAMMER</h2>
                         </div>
                     </div>
-                    <div className='profile-container-right'>
+                    <div className='col-lg-4 profile-container-right'>
                         <img src={ProfilePicture} className='profile-picture-image' alt='Thomas Raveneau'></img>
                     </div>
                 </div>
@@ -125,7 +123,7 @@ const Resume = () => {
                             <h4 className='resume-content-location-text'>ONEPOINT, PARIS, FRANCE</h4>
                         </div>
                         <div className='resume-content-desc-container'>
-                            <p className='resume-content-desc-text'>During this experience, my mission within the DSI team aimed to achieve these objectives:</p>
+                            <p className='resume-content-desc-text'>During this experience, my mission within the ISD team aimed to achieve these objectives:</p>
 
                             <ul className='resume-content-desc-padding'>
                                 <li className='resume-content-desc-text resume-content-desc-no-margin'>Development of the main communication tool for employees</li>

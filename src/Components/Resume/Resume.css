@@ -24,34 +24,23 @@
     margin-bottom: 8vh;
 }
 
-.profile-container {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-}
-
 .profile-container-left {
     display: flex;
-    flex: 3;
     flex-direction: column;
-
     justify-content: center;
 }
 
 .profile-container-right {
-    display: flex;
-    flex: 1;
-    background-color: #888888;
-    border-radius: 50%;
-    border: 6px solid #888888;
-    overflow: hidden;
+    justify-content: center;
 }
 
 .profile-picture-image {
     width: 100%;
-    height: auto;
+    position: relative;
+
+    box-shadow: 5px 0px 3px #888888;
+
     border-radius: 50%;
-    
 }
 
 .resume-name-container {
@@ -64,7 +53,7 @@
     font-family: 'Saira Extra Condensed', 'Archivo Black', 'Merriweather Sans', sans-serif;
 
     margin: 0;
-    margin-right: 25px;
+    margin-right: 3%;
     line-height: 1;
     height: fit-content;
 }
@@ -193,8 +182,6 @@
     flex-direction: row;
 
     justify-content: center;
-
-    padding-bottom: 10vh;
 }
 
 .resume-download-button {
@@ -268,4 +255,35 @@
     color: #333333;
 
     font-size: 0.85em;
+}
+
+@media (max-width: 992px) {
+
+    .resume-margin-between {
+        margin-bottom: 5vh;
+    }
+
+    .profile-container {
+        flex-direction: column-reverse;
+    }
+
+    .profile-picture-image {
+        width: 55%;
+        margin-bottom: 5vh;
+    }
+    .resume-name-container {
+        font-size: 10vw;
+    }
+
+    .resume-job-text {
+        font-size: 7vw;
+    }
+
+    .resume-content-container {
+        flex-direction: column;
+    }
+
+    .resume-content-right-container {
+        margin-top: 25px;
+    }
 }
