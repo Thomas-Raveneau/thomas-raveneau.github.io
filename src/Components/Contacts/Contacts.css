@@ -6,41 +6,33 @@
 }
 
 .contacts-content-container {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
+    
 }
 
 .contacts-content-container-left {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     margin-right: 20px;
 }
 
 .contacts-content-container-right {
     display: flex;
-    flex: 3;
     flex-direction: column;
-    margin-left: 20px;
+    /* flex: 3; */
+    /* margin-left: 20px; */
 
-    margin-top: 30px;
+    margin-top: 50px;
     /* justify-content: center; */
 }
 
 .contacts-profile-image-container {
-    display: flex;
-    flex: 1;
-    background-color: #888888;
-    border-radius: 50%;
-    border: 6px solid #888888;
-    overflow: hidden;
     margin-bottom: 12px;
 }
 
 .contacts-profile-image {
     width: 100%;
-    height: auto;
+    position: relative;
+
+    box-shadow: 5px 0px 3px #888888;
+
     border-radius: 50%;
 }
 
@@ -108,8 +100,7 @@
 }
 
 .contacts-thanks-container {
-    padding-top: 8vh;
-    padding-bottom: 5vh;
+    margin-top: 8vh;
 }
 
 .contacts-thanks-text {
@@ -118,4 +109,14 @@
     font-size: 0.85em;
     font-style: italic;
     margin:2px;
+}
+
+@media (max-width: 992px) {
+    .contacts-profile-image {
+        width: 35%;
+    }
+
+    .contacts-content-container-right {
+        margin-top: 16px;
+    }
 }

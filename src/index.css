@@ -13,7 +13,7 @@ body {
 
 html {
   /* Disable x scrolling */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 code {
@@ -22,8 +22,9 @@ code {
 }
 
 .fill {
-  min-width: 100vw;
-  width: 100vw;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -35,8 +36,8 @@ code {
 .p-category {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  padding-left: 10vh;
-  padding-right: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .bg-category-dark {
