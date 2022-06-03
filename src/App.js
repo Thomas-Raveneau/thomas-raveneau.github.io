@@ -9,15 +9,11 @@ import Resume from './Components/Resume/Resume';
 import Contacts from './Components/Contacts/Contacts';
 
 const App = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
   const [isPageLoaded, setIsPageLoaded] = useState(false);
   const [isHeaderVisible, _setIsHeaderVisible] = useState(false);
   const visibilityHeaderHeight = 300;
   const headerVisibilityRef = useRef(isHeaderVisible);
   const headerVisibilityFunctionRef = useRef(null);
-
-  useEffect(() => {
-  }, []);
 
   const setIsHeaderVisible = (isVisible) => {
     headerVisibilityRef.current = isVisible;
@@ -37,15 +33,20 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleHeaderVisibility);
-    setIsLoaded(true);
 
-  }, [])
-
-  useEffect(() => {
-    if (isLoaded) {
+    const onPageLoad = () => {
       setIsPageLoaded(true);
+    };
+
+    // Check if the page has already loaded
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener("load", onPageLoad);
     }
-  }, [isLoaded]);
+  }, [])
 
   if (isPageLoaded) {
     return (
@@ -63,7 +64,11 @@ const App = () => {
   }
   else {
     return (
-      <div></div>
+      <div className='container-fluid loading-container'>
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
     );
   }
 }
