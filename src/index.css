@@ -13,6 +13,7 @@ body {
 
 html {
   /* Disable x scrolling */
+  max-width: 100%;
   overflow-x: hidden;
 }
 

@@ -5,7 +5,7 @@ import './RedirectButton.css'
 
 
 
-const RedirectButton = function ({ name, handleRedirection }) {
+const RedirectButton = function ({ name, handleRedirection, isDropdown }) {
     const selectIsActive = (state) => {
         return state.app.currentSection === name ? true : false;
     };
@@ -14,9 +14,9 @@ const RedirectButton = function ({ name, handleRedirection }) {
 
     return (
         isActive ?
-            <button className={"Redirect-Button Active"} onClick={() => (handleRedirection(name))}> {name}</button>
+            <button className={!isDropdown ? "Redirect-Button Active" : "Redirect-Button Active DropdownActive"} onClick={() => (handleRedirection(name))}> {name}</button>
             :
-            <button className={"Redirect-Button"} onClick={() => (handleRedirection(name))}> {name}</button>
+            <button className={!isDropdown ? "Redirect-Button" : "Redirect-Button DropdownActive"} onClick={() => (handleRedirection(name))}> {name}</button>
     );
 }
 

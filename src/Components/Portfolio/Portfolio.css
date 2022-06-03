@@ -14,35 +14,24 @@
 }
 
 .project-right.project-visible {
-    animation: 1.5s ease-out 0s 1 slide-right forwards;
+    animation: 1s ease-out 0s 1 slide forwards;
 }
 
 .project-left.project-visible {
-    animation: 1.5s ease-out 0s 1 slide-left forwards;
+    animation: 1s ease-out 0s 1 slide forwards;
 }
 
 .portofolio-project-container:last-of-type {
     margin-bottom: 0vh;
 }
 
-@keyframes slide-right {
+@keyframes slide {
     0% {
-        transform: translateX(100vh);
+        transform: translateY(10vh);
     }
 
     100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-left {
-    0% {
-        transform: translateX(-100vh);
-    }
-
-    100% {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }

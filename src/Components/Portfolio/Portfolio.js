@@ -28,9 +28,9 @@ const Portfolio = () => {
     const scratchyVisibilityRef = useRef();
 
     const isSectionVisible = IsElementVisible(sectionVisibilityRef, '-175px');
-    const isQuakeVisible = IsElementVisible(quakeVisibilityRef, '-200px');
-    const isSocialDungeonsVisible = IsElementVisible(socialDungeonsVisibilityRef, '-200px');
-    const isScratchyVisible = IsElementVisible(scratchyVisibilityRef, '-200px');
+    const isQuakeVisible = IsElementVisible(quakeVisibilityRef, '-100px');
+    const isSocialDungeonsVisible = IsElementVisible(socialDungeonsVisibilityRef, '-100px');
+    const isScratchyVisible = IsElementVisible(scratchyVisibilityRef, '-100px');
 
     useEffect(() => {
         if (isSectionVisible) {
