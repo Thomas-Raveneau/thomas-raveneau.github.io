@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9dc1697657a0edf24e83",
+    "revision": "3fcc2f72bf324595d85e",
     "url": "/static/css/main.6aca73dc.chunk.css"
   },
   {
-    "revision": "9dc1697657a0edf24e83",
-    "url": "/static/js/main.9dc16976.chunk.js"
+    "revision": "3fcc2f72bf324595d85e",
+    "url": "/static/js/main.3fcc2f72.chunk.js"
   },
   {
     "revision": "a151c410121eaff416ce",
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/static/media/cpp.e8d4928c.png"
   },
   {
-    "revision": "f2c1a9ad9a9cd6b2a2ccd06e9fbee8fb",
-    "url": "/static/media/QuakeIntroImage.f2c1a9ad.png"
+    "revision": "583b98cf9a423224a20ff964433659c7",
+    "url": "/static/media/QuakeIntroImage.583b98cf.png"
   },
   {
-    "revision": "930fb4e8d1829f60084c46be5eba2eb8",
-    "url": "/static/media/ScratchyIntroImage.930fb4e8.png"
+    "revision": "47e0f8dd14da8b10c461bdfacd38ffd3",
+    "url": "/static/media/ScratchyIntroImage.47e0f8dd.png"
   },
   {
     "revision": "8685e36b47c8e8ad33c846656728eaa7",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/static/media/profilepicture.b109dab0.jpg"
   },
   {
-    "revision": "b46ed40eeb7d3ec6f4d14d93d3880e7e",
-    "url": "/static/media/SocialDungeonsIntroImage.b46ed40e.png"
+    "revision": "be6050acd88e96bfa19316159f12eef0",
+    "url": "/static/media/SocialDungeonsIntroImage.be6050ac.png"
   },
   {
     "revision": "0441d706eedde728ea8a19f9beb30a18",
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/static/media/HobbiesCategoryIcon.c382b663.png"
   },
   {
-    "revision": "4aaeaa059578f4ab35a5afacf4d068f9",
-    "url": "/static/media/SocialDungeonsImage.4aaeaa05.png"
+    "revision": "0c0653ed77c37ffa191f5f8a3df0fbe3",
+    "url": "/static/media/SocialDungeonsImage.0c0653ed.png"
   },
   {
     "revision": "efd437ace5ab0c56adf2be8f53af38f1",
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/static/media/github-plain.4eab660b.png"
   },
   {
-    "revision": "1a13e5e038d82b093f4a09c0d7002131",
+    "revision": "528b18172bcae839096e41a802a2839b",
     "url": "/index.html"
   }
 ];
