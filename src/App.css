@@ -6,6 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background-color: whitesmoke;
+
+  position: absolute;
+  z-index: 5;
   height: 100vh;
 }

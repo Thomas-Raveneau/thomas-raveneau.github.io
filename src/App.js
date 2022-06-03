@@ -35,7 +35,10 @@ const App = () => {
     window.addEventListener('scroll', handleHeaderVisibility);
 
     const onPageLoad = () => {
-      setIsPageLoaded(true);
+      setTimeout(() => {
+        setIsPageLoaded(true);
+
+      }, 1000)
     };
 
     // Check if the page has already loaded
@@ -48,29 +51,31 @@ const App = () => {
     }
   }, [])
 
-  if (isPageLoaded) {
-    return (
-      <div className="App" onScroll={handleHeaderVisibility}>
-        <Header
-          headerVisibilityFunction={headerVisibilityFunctionRef}
-        />
-        <Intro />
-        <Prologue />
-        <Portfolio />
-        <Resume />
-        <Contacts />
-      </div>
-    );
-  }
-  else {
-    return (
-      <div className='container-fluid loading-container'>
-        <div class="spinner-border" role="status">
-          <span class="sr-only">Loading...</span>
+  const loadingView = () => {
+    if (!isPageLoaded) {
+      return (
+        <div className='container-fluid loading-container'>
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
         </div>
-      </div>
-    );
-  }
+      );
+    }
+  };
+
+  return (
+    <div className="App" onScroll={handleHeaderVisibility}>
+      <Header
+        headerVisibilityFunction={headerVisibilityFunctionRef}
+      />
+      {loadingView()}
+      <Intro />
+      <Prologue />
+      <Portfolio />
+      <Resume />
+      <Contacts />
+    </div>
+  );
 }
 
 export default App;
