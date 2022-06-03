@@ -232,6 +232,10 @@
     filter: invert(9%) sepia(37%) saturate(0%) hue-rotate(237deg) brightness(102%) contrast(76%);
 }
 
+.resume-download-button:hover {
+    text-decoration: none;
+}
+
 .resume-download-text-container {
     min-height: 40px;
     padding-left: 5px;
@@ -255,6 +259,10 @@
     color: #333333;
 
     font-size: 0.85em;
+}
+
+.resume-download-text-container:hover {
+    text-decoration: none;
 }
 
 @media (max-width: 992px) {
