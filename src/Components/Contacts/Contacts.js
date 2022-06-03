@@ -50,12 +50,16 @@ const Contacts = () => {
                                 <img className='contacts-link-image' src={EmailImage} alt='Email logo'></img>
                             </button>
                         </a>
-                        <button className='contacts-link-button' onClick={() => { redirectToLink(LinkedinLink) }}>
-                            <img className='contacts-link-image' src={LinkedinImage} alt='Linkedin logo'></img>
-                        </button>
-                        <button className='contacts-link-button' onClick={() => { redirectToLink(GithubLink) }}>
-                            <img className='contacts-link-image' src={GithubImage} alt='Github logo'></img>
-                        </button>
+                        <div>
+                            <button className='contacts-link-button' onClick={() => { redirectToLink(LinkedinLink) }}>
+                                <img className='contacts-link-image' src={LinkedinImage} alt='Linkedin logo'></img>
+                            </button>
+                        </div>
+                        <div>
+                            <button className='contacts-link-button' onClick={() => { redirectToLink(GithubLink) }}>
+                                <img className='contacts-link-image' src={GithubImage} alt='Github logo'></img>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div className='col-lg-8 p-0 contacts-content-container-right'>
