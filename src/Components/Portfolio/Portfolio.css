@@ -149,6 +149,10 @@
     max-width: 195px;
 }
 
+.project-link-button:focus {
+    outline: none;
+}
+
 .project-link-image-container {
     display: flex;
     flex: 1;

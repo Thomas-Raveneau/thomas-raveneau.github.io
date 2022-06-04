@@ -18,8 +18,14 @@
     color: #40AF93;
 }
 
+.Redirect-Button:focus {
+    outline: none;
+}
+
 .Active {
     background-color: #40AF93;
+    border: none;
+    outline: none;
 }
 
 .Redirect-Button.Active:hover {
