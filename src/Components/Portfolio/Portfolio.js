@@ -19,6 +19,7 @@ const QuakeSourceLink = 'https://github.com/Thomas-Raveneau/Quake';
 const SocialDungeonsSourceLink = 'https://github.com/Thomas-Raveneau/SocialDungeons';
 const ScratchySourceLink = 'https://github.com/Thomas-Raveneau/Scratchy';
 
+const QuakeDemoLink = 'https://youtu.be/bQfITnBXB74';
 const SocialDungeonsDemoLink = 'https://youtu.be/GHkECeZkpi0';
 const ScratchyDemoLink = 'https://youtu.be/NzmRBggwTOA';
 
@@ -96,7 +97,7 @@ const Portfolio = () => {
                         <div className='col-lg-6'>
                             <div className='row project-link-container'>
                                 <div className='col-md-6 project-link-col project-link-col-left'>
-                                    <button className='project-link-button' onClick={() => { redirectToLink() }}>
+                                    <button className='project-link-button' onClick={() => { redirectToLink(QuakeDemoLink) }}>
                                         <div className='project-link-image-container'>
                                             <img className='project-link-image' src={YoutubeImage} alt='Youtube logo'></img>
                                         </div>
@@ -178,7 +179,7 @@ const Portfolio = () => {
                 <div className='col-lg-6 col-sm-12 p-0'>
                     <h3 className='project-title project-title-right project-title-normal'>SCRATCHY</h3>
                     <p className='project-description'>
-                        I present to you my graphics library. It's not very advanced but the goal was more to understand the underside
+                        I present to you my C++ graphics library. It's not very advanced but the goal was more to understand the underside
                         of game engines such as Unreal Engine, Godot or Unity. I am now able to understand how shaders, texturing, texture mapping works.
                         With this you can arrange different 3D and 2D shapes in an environment and add the textures you want.
                         A more advanced version will arrive next year!

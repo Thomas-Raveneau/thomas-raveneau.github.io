@@ -68,7 +68,7 @@ const Resume = () => {
                     </div>
                 </div>
                 <div className='resume-margin-between'>
-                    <p className='resume-profile-info-text'>Developer student since 4 years and before that amateur in this domain, I developed a strong passion for video games since my childhood.</p>
+                    <p className='resume-profile-info-text'>French developer student since 4 years and before that amateur in this domain, I developed a strong passion for video games since my childhood.</p>
                     <p className='resume-profile-info-text'>In highschool, I discovered game development by creating a Monopoly game with Python.
                         Today my skills in video game development have highly evolved thanks to the projects I did with and in parralel of my studies using my passive learning of 10th art acquired since I was young, today pushing me to develop quality games where the players joy is my biggest concern.
                         Looking for end-of-studies internships from September 2022 to February 2023 and from March 2023 to August 2023.
