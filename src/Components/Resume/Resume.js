@@ -221,7 +221,7 @@ const Resume = () => {
                 <div className='resume-margin-between'>
                     <h3 className='resume-skill-category-text'>GAME ENGINES, IDES & TOOLS</h3>
                     <div className='resume-skill-images-container'>
-                        <img className='project-techno-image image-margin' src={UnrealImage} alt='Unreal Engine logo' title='Unreal Engin'></img>
+                        <img className='project-techno-image image-margin' src={UnrealImage} alt='Unreal Engine logo' title='Unreal Engine'></img>
                         <img className='project-techno-image image-margin' src={UnityImage} alt='Unity logo' title='Unity'></img>
                         <img className='project-techno-image image-margin' src={GodotImage} alt='Godot logo' title='Godot'></img>
                         <img className='project-techno-image image-margin' src={VStudioImage} alt='Visual studio logo' title='Visual Studio'></img>
